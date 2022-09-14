@@ -3,17 +3,17 @@
 Pertama mari kita coba revisit materi `Binary Tree` yang ada di kuliahan, silahkan lihat [refrensi disini ](https://en.wikipedia.org/wiki/Binary_tree)
 In-short `Binary Tree` adalah sebuah `Tree` dengan sebuah rules untuk memempatkan setiap `Node` nya.
 
-# Traversal
+### Traversal
 
-Traversal adalah sebuah term atau sebuah proses untuk mencari sebuah `Node` yang ada di dalam sebuah `Tree`.
+Traversal adalah sebuah term atau sebuah proses untuk mencari sebuah `Node` yang ada di dalam `Tree`.
 Oke, mungkin cara termudah untuk <s>melupakan mantan</s> melakukan `Traversal` adalah mengunjungi setiap node yang ada dan mencoba untuk 
 <s>melupakannya</s>  mencocokannya. Tapi, bukannya `Tree` adalah `non-linear data structure` kita tidak bisa melakukan `looping by index` seperti di array
-bukan ?
+bukan?, lalu harus bagaimanakah aku bisa untuk <s>mendapatkan hatinya</s> meng-coding nya
 
-# DFS Traversal
+### DFS Traversal
 
-DFS Traversal adalah sebuah teknik `Traversal` dimana kita akan berkunjung dulu ke `Node` Terbawah yang di sebelah `kiri` lalu berkunjung ke `kanan`.
-Anda bingung? sama saya juga.., tapi coba kita simak ilustrasi di bawah ini
+DFS Traversal adalah sebuah teknik `Traversal` dimana kita akan berkunjung dulu ke `Node` Terbawah yang di sebelah `kiri` sampai ujung `Node` Tersebut
+lalu berkunjung ke `kanan`. Anda bingung? sama saya juga.., tapi coba kita simak ilustrasi di bawah ini
 
 <br />
 
@@ -25,7 +25,7 @@ Oke, kita sudah melihat cara kerja dari `DFS Traversal` but, bagaimanakah cara <
 code yang akan kita buat :
 
 - Buat sebuah `function` untuk melakukan visit terhadap setiap node
-- Lalu buat pertama yang akan kita lakukan check apa tree tersebut kosong [kayak hati aku tanpa kamu :D]
+- Lalu pertama yang akan kita lakukan adalah, check apakah tree tersebut kosong [kayak hati aku tanpa kamu :D]
 - lalu setelah itu kita check apakah `left node` nya ada, jika ada maka kita akan panggil lagi function tersebut (baca: recursive) untuk
 mengunjungi `let node` dari `left node` tersebut
 - lakukan hal yang sama untuk `right node`
@@ -96,7 +96,8 @@ dfsPrint(node)
 
 ### Real world implementation
 
-`DFS Traversal` theorem di-implementasikan di `Assembly Syntax Tree` aka `AST`, bingung..., lihat aja contoh di bawah ini :
+`DFS Traversal` theorem di-implementasikan di `Assembly Syntax Tree` aka `AST`, terdengar asing? kalau anda familiar
+mungkin anda sudah bisa membuat bahasa pemograman sendiri.., serius nggk bohong.., mari kita lihat aja contoh di bawah ini :
 
 <br />
 
